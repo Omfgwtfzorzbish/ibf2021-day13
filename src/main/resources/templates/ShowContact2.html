@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div align = "center">
+            <h1 th:text = "${'ID SERACHED>> ' + contact.id}">  </h1>
+            <span>Full Name: </span> <span th:text = "${contact.name}"></span>
+            <span>E-mail: </span> <span th:text = "${contact.email}"></span>
+            <span>Phone Number: </span> <span th:text = "${contact.phone}"></span>
+        </div>
+    </body>
+    
+</body>
+</html>

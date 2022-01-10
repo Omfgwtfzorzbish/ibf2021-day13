@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<div align="center">
+    <h1> User Registration Form</h1>
+    <form action="#" th:action="@{/getcontact}" th:object="${contact}" method="post" > <!-- if we have pointed at user object with dollar syntax $user, subsequent fields can use asterisk *{name} instead of ${user.name}-->
+        <label>Full name:</label>
+            <input type="text" th:field="*{name}"/></br>
+        <label>e-mail:</label>
+            <input type="text" th:field="*{email}"/></br>
+        <label>Phone Number:</label>:</label>
+            <input type="text" th:field="*{phone}"/></br>
+            
+        <button type="submit">Register</button>
+    </form>
+</div>
+</html>
